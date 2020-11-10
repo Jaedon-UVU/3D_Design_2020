@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
-//Name: Camera_04.ma
-//Last modified: Tue, Nov 03, 2020 09:15:54 PM
+//Name: Camera_05.ma
+//Last modified: Tue, Nov 03, 2020 09:16:09 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -12,13 +12,13 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 createNode transform -s -n "persp";
 	rename -uid "1C003BA1-457C-F66E-B105-48A00EEB4AC7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.1440132391806763 6.6093145354026328 -2.9781049073554762 ;
+	setAttr ".t" -type "double3" 17.547669211819201 12.254598206691204 -7.7133216916050973 ;
 	setAttr ".r" -type "double3" 329.66164729068049 -600.59999999983461 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D4C7F464-4326-C29B-2109-329516C9B4BA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 7.8897435492920529;
+	setAttr ".coi" 19.066189291549286;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3571,4 +3571,4 @@ connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId6.msg" ":initialShadingGroup.gn" -na;
-// End of Camera_04.ma
+// End of Camera_05.ma
